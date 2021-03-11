@@ -46,20 +46,22 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 40px 100px;
 	z-index: 10000;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	transition: 0.5s;
+	background-color: #ffffff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .header_logo {
-	color: #ffffff;
 	font-weight: 700;
 	font-size: 2em;
 	text-decoration: none;
-	text-shadow: 1px 1px 1px #111111;
+	color: saddlebrown;
+	text-shadow: none;
 }
 
 .header_logo span {
@@ -77,28 +79,11 @@ p {
 	font-size: 1.2em;
 	margin-left: 30px;
 	font-weight: 500;
-	text-shadow: 1px 1px 1px saddlebrown;
 }
 
 .header_navigation a:hover {
 	text-decoration: underline;
 }
-
-.sticky {
-	background-color: #ffffff;
-	padding: 10px 100px;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-}
-
-.sticky .header_logo {
-	color: saddlebrown;
-	text-shadow: none;
-}
-
-.sticky .header_navigation a {
-	text-shadow: none;
-}
-
 section {
 	padding: 100px;
 }

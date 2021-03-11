@@ -38,7 +38,7 @@
 		background-size: 25px;
 		background: url("../assets/close.png") no-repeat center;
 	}
-	.sticky .navigation-toggleMenu {
+	.header .navigation-toggleMenu {
 		filter: invert(1);
 	}
 	section {
@@ -78,7 +78,7 @@
 		font-weight: 300;
 	}
 	.testimonial_card {
-		margin: 10px 0;
+		margin: 10px;
 		padding: 20px;
 	}
 	.contact_form {
