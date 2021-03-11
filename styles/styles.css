@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 1000px;
+}
+
+.loader{
+	background: transparent;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader.hidden{
+	animation: fadeOut 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+}
+
+p {
+	font-weight: 300;
+	color: #111;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+.header_logo {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #111111;
+}
+
+.header_logo span {
+	color: darkorange;
+}
+
+.header_navigation {
+	position: relative;
+	display: flex;
+}
+
+.header_navigation a {
+	text-decoration: none;
+	color: darkorange;
+	font-size: 1.2em;
+	margin-left: 30px;
+	font-weight: 500;
+	text-shadow: 1px 1px 1px saddlebrown;
+}
+
+.header_navigation a:hover {
+	text-decoration: underline;
+}
+
+.sticky {
+	background-color: #ffffff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sticky .header_logo {
+	color: saddlebrown;
+	text-shadow: none;
+}
+
+.sticky .header_navigation a {
+	text-shadow: none;
+}
+
+section {
+	padding: 100px;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+}
+
+.banner_content {
+	max-width: 900px;
+	text-align: center;
+	z-index: 1;
+}
+
+.banner_content h2 {
+	font-size: 5em;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.banner_content p {
+	font-size: 1em;
+	color: #ffffff;
+}
+.banner_button {
+	text-decoration: none;
+}
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.button {
+	font-size: 1em;
+	color: #ffffff;
+	display: inline-block;
+	background-color: darkorange;
+	padding: 10px 30px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.button:hover {
+	letter-spacing: 4px;
+}
+
+.about {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about_text {
+	position: relative;
+	width: 48%;
+}
+
+h2 {
+	color: #111111;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+h2 span {
+	color: darkorange;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.about_image {
+	position: relative;
+	width: 48%;
+	min-height: 500px;
+}
+
+.about_image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.text {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tours_content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.content_card {
+	width: 340px;
+	margin: 20px;
+	border: 15px solid #ffffff;
+	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+}
+
+.content_card_text {
+	padding: 15px 0 5px;
+}
+
+.content_card_text h3 {
+	font-weight: 400;
+	color: #111111;
+}
+
+.content_card_image {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.content_card_image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tours {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tours_button {
+	text-decoration: none;
+}
+
+.expert_content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+.expert_card {
+	width: 250px;
+	margin: 15px;
+}
+
+.expert_image {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.expert_image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.expert_card_text {
+	padding: 15px 0 5px;
+}
+
+.expert_card_text h3 {
+	font-weight: 400;
+	color: #111111;
+}
+
+.testimonials {
+	background: url("../assets/background2.jpg");
+	background-size: cover;
+}
+
+.testimonials_text h2, .testimonials_text p {
+	color: #ffffff;
+}
+
+.testimonial_content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+.testimonial_card {
+	width: 340px;
+	margin: 20px;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: white;
+}
+
+.testimonial_image {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.testimonial_image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.testimonial_card_text {
+	text-align: center;
+}
+
+.testimonial_card_text p {
+	color: #666666;
+	font-style: italic;
+}
+
+.testimonial_card_text h3 {
+	margin-top: 20px;
+	color: darkorange;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.contact {
+	background: url("../assets/background3.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact_form {
+	padding: 75px 50px;
+	background: #ffffff;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+	max-width: 500px;
+	margin-top: 50px;
+	width: 100%;
+
+}
+
+.contact_form h3 {
+	color: #111111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.contact_input-box {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contact_input-box input, .contact_input-box textarea {
+	width: 100%;
+	border: 1px solid #555;
+	padding: 10px;
+	color: #111111;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+
+.contact_input-box input[type="submit"] {
+	font-size: 1em;
+	color: #ffffff;
+	background: darkorange;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	max-width: 100px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+
+.copyright {
+	padding: 8px 40px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	text-align: center;
+}
+.copyright p {
+	color: #333;
+}

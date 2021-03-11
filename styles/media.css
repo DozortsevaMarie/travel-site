@@ -1,0 +1,96 @@
+@media (max-width: 991px) {
+	.header {
+		padding: 10px 20px;
+	}
+	.header_navigation {
+		display: none;
+	}
+	.header_navigation.active {
+		width: 100%;
+		height: calc(100% - 68px);
+		position: fixed;
+		top: 68px;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #ffffff;
+	}
+	.header_navigation.active a {
+		color: #111111;
+		font-size: 1.6em;
+		text-shadow: none;
+
+	}
+	.header_navigation.active a:hover {
+		color: darkorange;
+	}
+	.navigation-toggleMenu {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background-size: 30px;
+		background: url("../assets/menu.png") no-repeat center;
+		cursor: pointer;
+	}
+	.navigation-toggleMenu.active {
+		background-size: 25px;
+		background: url("../assets/close.png") no-repeat center;
+	}
+	.sticky .navigation-toggleMenu {
+		filter: invert(1);
+	}
+	section {
+		padding: 20px;
+	}
+	.banner_content h2 {
+		font-size: 3em;
+	}
+	.about {
+		flex-direction: column;
+	}
+	.about_text {
+		width: 100%;
+	}
+	.about_image {
+		margin-top: 20px;
+		width: 100%;
+		height: 300px;
+	}
+	.tours_content {
+		margin-top: 20px;
+	}
+	.content_card {
+		margin: 10px;
+		width: 300px;
+	}
+	.content_card_image {
+		height: 260px;
+	}
+	.text {
+		text-align: center;
+	}
+	.text_title {
+		font-size: 1.8em;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+		font-weight: 300;
+	}
+	.testimonial_card {
+		margin: 10px 0;
+		padding: 20px;
+	}
+	.contact_form {
+		margin-top: 20px;
+		padding: 50px 20px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.banner_content h2 {
+		font-size: 2.2em;
+	}
+}
+
