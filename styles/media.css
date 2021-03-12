@@ -2,10 +2,10 @@
 	.header {
 		padding: 10px 20px;
 	}
-	.header_navigation {
+	.header__navigation {
 		display: none;
 	}
-	.header_navigation.active {
+	.header__navigation_active {
 		width: 100%;
 		height: calc(100% - 68px);
 		position: fixed;
@@ -17,13 +17,13 @@
 		align-items: center;
 		background: #ffffff;
 	}
-	.header_navigation.active a {
+	.header__navigation_active a {
 		color: #111111;
 		font-size: 1.6em;
 		text-shadow: none;
 
 	}
-	.header_navigation.active a:hover {
+	.header__navigation_active a:hover {
 		color: darkorange;
 	}
 	.navigation-toggleMenu {
@@ -34,7 +34,7 @@
 		background: url("../assets/menu.png") no-repeat center;
 		cursor: pointer;
 	}
-	.navigation-toggleMenu.active {
+	.navigation-toggleMenu_active {
 		background-size: 25px;
 		background: url("../assets/close.png") no-repeat center;
 	}
@@ -44,44 +44,44 @@
 	section {
 		padding: 20px;
 	}
-	.banner_content h2 {
+	.banner__content h2 {
 		font-size: 3em;
 	}
 	.about {
 		flex-direction: column;
 	}
-	.about_text {
+	.about__text {
 		width: 100%;
 	}
-	.about_image {
+	.about__image {
 		margin-top: 20px;
 		width: 100%;
 		height: 300px;
 	}
-	.tours_content {
+	.tours__content {
 		margin-top: 20px;
 	}
-	.content_card {
+	.content__card {
 		margin: 10px;
 		width: 300px;
 	}
-	.content_card_image {
+	.content__card-image {
 		height: 260px;
 	}
 	.text {
 		text-align: center;
 	}
-	.text_title {
+	.text__title {
 		font-size: 1.8em;
 		line-height: 1.5em;
 		margin-bottom: 15px;
 		font-weight: 300;
 	}
-	.testimonial_card {
+	.testimonial__card {
 		margin: 10px;
 		padding: 20px;
 	}
-	.contact_form {
+	.contact__form {
 		margin-top: 20px;
 		padding: 50px 20px;
 		margin-bottom: 30px;
@@ -89,7 +89,7 @@
 }
 
 @media (max-width: 480px) {
-	.banner_content h2 {
+	.banner__content h2 {
 		font-size: 2.2em;
 	}
 }

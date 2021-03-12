@@ -58,7 +58,7 @@ p {
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.header_logo {
+.header__logo {
 	font-weight: 700;
 	font-size: 2em;
 	text-decoration: none;
@@ -66,16 +66,16 @@ p {
 	text-shadow: none;
 }
 
-.header_logo span {
+.header__logo span {
 	color: darkorange;
 }
 
-.header_navigation {
+.header__navigation {
 	position: relative;
 	display: flex;
 }
 
-.header_navigation a {
+.header__navigation a {
 	text-decoration: none;
 	color: darkorange;
 	font-size: 1.2em;
@@ -83,7 +83,7 @@ p {
 	font-weight: 500;
 }
 
-.header_navigation a:hover {
+.header__navigation a:hover {
 	text-decoration: underline;
 }
 
@@ -101,24 +101,24 @@ section {
 	background-size: cover;
 }
 
-.banner_content {
+.banner__content {
 	max-width: 900px;
 	text-align: center;
 	z-index: 1;
 }
 
-.banner_content h2 {
+.banner__content h2 {
 	font-size: 5em;
 	color: #ffffff;
 	font-weight: 700;
 }
 
-.banner_content p {
+.banner__content p {
 	font-size: 1em;
 	color: #ffffff;
 }
 
-.banner_button {
+.banner__button {
 	text-decoration: none;
 }
 
@@ -157,7 +157,7 @@ video {
 	justify-content: space-between;
 }
 
-.about_text {
+.about__text {
 	position: relative;
 	width: 48%;
 }
@@ -174,13 +174,13 @@ h2 span {
 	font-size: 1.5em;
 }
 
-.about_image {
+.about__image {
 	position: relative;
 	width: 48%;
 	min-height: 500px;
 }
 
-.about_image img {
+.about__image img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -197,36 +197,29 @@ h2 span {
 	flex-direction: column;
 }
 
-.tours_content {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 40px;
-}
-
-.content_card {
+.content__card {
 	width: 340px;
 	margin: 20px;
 	border: 15px solid #ffffff;
 	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
 }
 
-.content_card_text {
+.content__card-text {
 	padding: 15px 0 5px;
 }
 
-.content_card_text h3 {
+.content__card-text h3 {
 	font-weight: 400;
 	color: #111111;
 }
 
-.content_card_image {
+.content__card-image {
 	position: relative;
 	width: 100%;
 	height: 300px;
 }
 
-.content_card_image img {
+.content__card-image img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -241,11 +234,18 @@ h2 span {
 	align-items: center;
 }
 
-.tours_button {
+.tours__content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.tours__button {
 	text-decoration: none;
 }
 
-.expert_content {
+.expert__content {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -253,18 +253,18 @@ h2 span {
 	margin-top: 40px;
 }
 
-.expert_card {
+.expert__card {
 	width: 250px;
 	margin: 15px;
 }
 
-.expert_image {
+.expert__image {
 	position: relative;
 	width: 100%;
 	height: 300px;
 }
 
-.expert_image img {
+.expert__image img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -273,11 +273,11 @@ h2 span {
 	object-fit: cover;
 }
 
-.expert_card_text {
+.expert__card-text {
 	padding: 15px 0 5px;
 }
 
-.expert_card_text h3 {
+.expert__card-text h3 {
 	font-weight: 400;
 	color: #111111;
 }
@@ -287,11 +287,11 @@ h2 span {
 	background-size: cover;
 }
 
-.testimonials_text h2, .testimonials_text p {
+.testimonials__text h2, .testimonials__text p {
 	color: #ffffff;
 }
 
-.testimonial_content {
+.testimonial__content {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -299,7 +299,7 @@ h2 span {
 	margin-top: 40px;
 }
 
-.testimonial_card {
+.testimonial__card {
 	width: 340px;
 	margin: 20px;
 	padding: 40px;
@@ -310,7 +310,7 @@ h2 span {
 	background: white;
 }
 
-.testimonial_image {
+.testimonial__image {
 	position: relative;
 	width: 100px;
 	height: 100px;
@@ -319,7 +319,7 @@ h2 span {
 	overflow: hidden;
 }
 
-.testimonial_image img {
+.testimonial__image img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -328,16 +328,16 @@ h2 span {
 	object-fit: cover;
 }
 
-.testimonial_card_text {
+.testimonial__card-text {
 	text-align: center;
 }
 
-.testimonial_card_text p {
+.testimonial__card-text p {
 	color: #666666;
 	font-style: italic;
 }
 
-.testimonial_card_text h3 {
+.testimonial__card-text h3 {
 	margin-top: 20px;
 	color: darkorange;
 	font-size: 1em;
@@ -351,7 +351,7 @@ h2 span {
 	flex-direction: column;
 }
 
-.contact_form {
+.contact__form {
 	padding: 75px 50px;
 	background: #ffffff;
 	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
@@ -360,20 +360,20 @@ h2 span {
 	width: 100%;
 }
 
-.contact_form h3 {
+.contact__form h3 {
 	color: #111111;
 	font-size: 1.2em;
 	margin-bottom: 20px;
 	font-weight: 500;
 }
 
-.contact_input-box {
+.contact__input-box {
 	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.contact_input-box input, .contact_input-box textarea {
+.contact__input-box input, .contact__input-box textarea {
 	width: 100%;
 	border: 1px solid #555;
 	padding: 10px;
@@ -384,7 +384,7 @@ h2 span {
 	resize: none;
 }
 
-.contact_input-box input[type="submit"] {
+.contact__input-box input[type="submit"] {
 	font-size: 1em;
 	color: #ffffff;
 	background: darkorange;
@@ -399,7 +399,7 @@ h2 span {
 	cursor: pointer;
 }
 
-.contact_message {
+.contact__message {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -411,11 +411,11 @@ h2 span {
 	align-items: center;
 }
 
-.contact_message.hidden {
+.contact__message_hidden {
 	display: none;
 }
 
-.contact_message-box {
+.contact__message-box {
 	max-width: 450px;
 	max-height: 200px;
 	width: 100%;
@@ -431,7 +431,7 @@ h2 span {
 	outline-offset: -25px;
 }
 
-.contact_message-box h3 {
+.contact__message-box h3 {
 	font-size: 1.2em;
 	font-weight: 400;
 }

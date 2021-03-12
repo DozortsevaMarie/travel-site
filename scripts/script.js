@@ -5,16 +5,16 @@ window.addEventListener("load", () => {
 
 function toggleMenu() {
 	const menuToggle = document.querySelector(".navigation-toggleMenu");
-	const navigation = document.querySelector(".header_navigation");
-	menuToggle.classList.toggle("active");
-	navigation.classList.toggle("active");
+	const navigation = document.querySelector(".header__navigation");
+	menuToggle.classList.toggle("navigation-toggleMenu_active");
+	navigation.classList.toggle("header__navigation_active");
 }
 
 const name = document.querySelector(".name");
 const email = document.querySelector(".email");
 const messageText = document.querySelector(".textarea");
 
-const submitForm = document.querySelector(".contact_form");
+const submitForm = document.querySelector(".contact__form");
 submitForm.addEventListener("submit", event => {
 	event.preventDefault();
 	const letterObject = {
@@ -23,15 +23,15 @@ submitForm.addEventListener("submit", event => {
 		messageText: messageText.value,
 	}
 	localStorage.setItem("letter", JSON.stringify(letterObject));
-	const message = document.querySelector(".contact_message");
+	const message = document.querySelector(".contact__message");
 	const showMessage = setTimeout(() => {
 		name.value = "";
 		email.value = "";
 		messageText.value = "";
-		message.classList.remove("hidden");
+		message.classList.remove("contact__message_hidden");
 	}, 500);
 	setTimeout(() => {
-		message.classList.add("hidden");
+		message.classList.add("contact__message_hidden");
 		clearTimeout(showMessage)
 	}, 2000);
 })

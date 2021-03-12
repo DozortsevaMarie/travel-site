@@ -1,7 +1,7 @@
 const countries = ["country1", "country2", "country3", "country4", "country5"];
 
 function changeBackground() {
-	const slider = document.querySelector(".slider-container");
+	const slider = document.querySelector(".slider__container");
 	setInterval(() => {
 		const bg = countries[Math.floor(Math.random() * countries.length)]
 		slider.style.background = `url("assets/${bg}.jpg")`;
@@ -41,16 +41,16 @@ function createContent(items) {
 	const content = document.getElementById('item');
 	content.innerHTML = items.reduce((acc, item) => {
 		return acc += `
-		<div class="item-container">
-			<div class="item-description">
-				<div class="item__direction">Country: ${item.country}, ${item.direction}</div>
-				<div class="item__duration">Duration: ${item.duration}</div>
-				<div class="item__description">Description: 
-					<p class="description__text">${item.description}</p>
+		<div class="item__container">
+			<div class="item__item-description">
+				<div class="item-description__direction">Country: ${item.country}, ${item.direction}</div>
+				<div class="item-description__duration">Duration: ${item.duration}</div>
+				<div class="item-description__description">Description: 
+					<p class="item-description__text">${item.description}</p>
 				</div>
-				<div class="item__price">${item.price}</div>
+				<div class="item-description__price">${item.price}</div>
 			</div>
-			<div class="item-image">
+			<div class="item__image">
 				<img src=${item.image} alt=${item.direction}>
 			</div>
 		</div>`
@@ -99,7 +99,7 @@ function createFilterCountries(items) {
 		countries.add(item.country)
 	});
 
-	const content = document.getElementById('countries-container');
+	const content = document.getElementById('countries__container');
 	content.innerHTML = Array.from(countries).reduce((acc, item) => {
 		return acc += ` 
 		<div class="countries__item">${item}</div>`
@@ -112,7 +112,7 @@ function createFilterCities(items) {
 		cities.add(item.direction)
 	});
 
-	const content = document.getElementById('cities-container');
+	const content = document.getElementById('cities__container');
 	content.innerHTML = Array.from(cities).reduce((acc, item) => {
 		return acc += ` 
 		<div class="cities__item">${item}</div>
