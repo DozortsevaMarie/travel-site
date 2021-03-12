@@ -66,7 +66,6 @@
 	background: #FFF;
 	border: 1px solid #555555;
 	box-sizing: border-box;
-	/*box-shadow:  0 2px 15px #DCDCDC;*/
 }
 
 .search__input {
@@ -214,7 +213,6 @@
 
 .cities__item {
 	color: #111111;
-	font-family: 'Rubik', sans-serif;
 	cursor: pointer;
 	line-height: 30px;
 	margin-top: 20px;
@@ -260,8 +258,8 @@
 		padding: 20px;
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-areas: 'sorter search search'
-        'item item item'
-				'filt filt filt';
+													'item item item'
+													'filt filt filt';
 	}
 }
 
@@ -270,9 +268,9 @@
 		grid-template-rows: 50px 50px 11fr 1fr;
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-areas: 'search search search'
-						'sorter sorter sorter'
-        'item item item'
-				'filt filt filt';
+												'sorter sorter sorter'
+												'item item item'
+												'filt filt filt';
 	}
 }
 

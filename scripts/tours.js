@@ -1,4 +1,5 @@
 const countries = ["country1", "country2", "country3", "country4", "country5"];
+
 function changeBackground() {
 	const slider = document.querySelector(".slider-container");
 	setInterval(() => {
@@ -6,6 +7,7 @@ function changeBackground() {
 		slider.style.background = `url("assets/${bg}.jpg")`;
 	}, 4000);
 }
+
 changeBackground();
 
 fetch('./testData.json')
@@ -31,6 +33,7 @@ function dropdown(element) {
 		arrow.classList.toggle('fa-angle-up');
 	});
 }
+
 dropdown(sorterDuration);
 dropdown(sorterPrice);
 
